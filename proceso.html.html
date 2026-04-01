@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestro Proceso - Café Donballes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin: 0;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    background: 
+        linear-gradient(rgba(19, 15, 9, 0.55), rgba(0,0,0,0.85)),
+        url('Plantación de café al amanecer.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.sub{
+    text-align:center;
+    opacity:0.8;
+    margin-bottom:60px;
+}
+
+.etapa{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    margin:160px 0;
+    opacity:0;
+    transform:translateY(60px) scale(0.95);
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.etapa.visible{
+    opacity:1;
+    transform:translateY(0) scale(1);
+}
+
+.etapa img, .etapa video {
+    width: 50%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    border-radius: 18px;
+
+    box-shadow: 0 30px 80px rgba(0,0,0,0.8);
+
+    transform: scale(0.96);
+    transition: all 1.2s ease;
+    opacity: 0.85;
+}
+
+.etapa.visible img,
+.etapa.visible video {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.etapa img:hover, .etapa video:hover{
+    transform:scale(1.05);
+}
+
+.texto{
+    width:50%;
+}
+
+.texto h2{
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.texto p{
+    line-height:1.8;
+    opacity:0.9;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:linear-gradient(135deg,#000000,#ff0000);
+    color:white;
+    padding:14px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.cta{
+    text-align:center;
+    margin-top:80px;
+    padding:50px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+}
+
+.cta h2{
+    font-size:30px;
+}
+
+.cta p{
+    opacity:0.8;
+}
+
+@media(max-width:768px){
+
+    .texto p{
+        max-width: 520px;
+    }
+
+    .etapa{
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        margin: 80px 0;
+    }
+
+    .texto{
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .texto p{
+        font-size: 16px;
+        line-height: 1.9;
+    }
+
+    .etapa img,
+    .etapa video{
+        width: 100%;
+        border-radius: 14px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    .container{
+        padding: 40px 15px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Nuestro Proceso Artesanal</h1>
+<p class="sub">“Del origen a la excelencia en cada taza.” ☕</p>
+
+<div class="etapa">
+    <img src="fruto2.jpeg">
+    <div class="texto">
+        <h2> Cultivo Orgánico</h2>
+        <p>
+        Nuestros cultivos pertenecen a la tierra Nayarita, el cual se lleva a cabo bajo estrictos estándares de calidad, en condiciones cuidadosamente controladas que favorecen el desarrollo óptimo de cada planta. Se emplean prácticas responsables y sostenibles que respetan el entorno, asegurando un equilibrio entre productividad y cuidado del medio ambiente. Cada etapa del crecimiento es supervisada con precisión, garantizando que el fruto alcance su máximo potencial en sabor, aroma y calidad, desde su origen.
+        </p>
+    </div>
+</div>
+
+<div class="etapa reverse">
+    <video autoplay muted loop playsinline preload="none" src="recolectando2.mp4"> </video>
+    <div class="texto">
+        <h2> Selección de Cereza</h2>
+        <p>
+       La recolección es un proceso cuidadosamente ejecutado a mano, donde cada cereza es seleccionada en su punto perfecto de maduración. Este meticuloso trabajo garantiza la máxima calidad, preservando la esencia, frescura y riqueza natural del fruto. Nuestro compromiso con la excelencia comienza en el campo, donde cada detalle es atendido con precisión para ofrecer una materia prima excepcional, base de un producto final distinguido.
+        </p>
+    </div>
+</div>
+
+<div class="etapa">
+    <video autoplay muted loop playsinline preload="none" src="camas-africanas.mp4"></video>
+    <div class="texto">
+        <h2> Secado Natural</h2>
+        <p>
+       Utilizamos <strong>camas africanas</strong> para llevar a cabo un secado lento, uniforme y cuidadosamente controlado, diseñado para preservar las cualidades esenciales del fruto. Al elevar el grano del suelo, permitimos una circulación de aire en 360°, evitando cualquier tipo de contaminación y favoreciendo una reducción de humedad homogénea por ambos lados.
+
+A través de técnicas precisas y una supervisión constante en cada lote, se logra concentrar de forma natural los azúcares, sabores y aromas del café. Este proceso no solo garantiza una limpieza excepcional en taza, sino también una consistencia superior y una calidad distintiva.
+
+El resultado es un perfil más definido, donde destaca la dulzura natural del fruto y se resalta el carácter único de cada cosecha, sentando la base para una experiencia final verdaderamente especial.
+</p>
+    </div>
+</div>
+
+<div class="etapa reverse">
+    <img src="cafe-oro.jpeg">
+    <div class="texto">
+        <h2> Café Oro</h2>
+        <p>
+       El café oro representa una etapa clave en la transformación del grano, donde, tras un proceso cuidadoso, se obtiene el grano verde listo para su selección y resguardo. En esta fase, se preservan sus características esenciales, manteniendo intacto su potencial de aroma, cuerpo y sabor.
+       Cada lote es evaluado bajo criterios de calidad rigurosos, garantizando uniformidad y excelencia. Este estado puro del café es la base sobre la cual se construye una experiencia final refinada y de alto nivel.
+</p>
+    </div>
+</div>
+
+<div class="etapa">
+    <video autoplay muted loop playsinline preload="none" src="maquina.mp4"></video>
+    <div class="texto">
+        <h2> Tostado Artesanal</h2>
+
+<p>
+Cada grano tiene su momento.
+</p>
+
+<p>
+A 206 °C, el café alcanza su punto exacto de transformación.
+</p>
+
+<p>
+El calor despierta sus compuestos naturales, desarrollando aroma, cuerpo y dulzura con precisión.
+</p>
+
+<p>
+No es solo tostado. Es control total sobre cada variable.
+</p>
+
+<p>
+Tiempo, temperatura y curva trabajan en equilibrio para revelar su verdadero carácter.
+</p>
+
+<p>
+El resultado: un café limpio, estructurado y profundamente expresivo.
+</p>
+    </div>
+</div>
+
+<div class="etapa reverse">
+    <img src="Empaques.jpeg">
+    <div class="texto">
+        <h2> Empaque Premium</h2>
+        <p>
+        Nuestro café se presenta en empaque tipo kraft, diseñado para combinar funcionalidad con una estética natural y elegante. Nuestras bolsas incorporan una <strong>válvula desgasificadora</strong> unidireccional, que permite al café “respirar” liberando CO₂ mientras impide la entrada de oxígeno, conservando así la frescura, el aroma y las cualidades del grano recién tostado por mucho más tiempo.
+        Además, cuentan con cierre hermético tipo zipper y sellado térmico, garantizando una protección óptima desde el momento del envasado hasta su consumo. Cada detalle ha sido pensado para mantener la integridad del producto y ofrecer una experiencia superior.
+        Disponible en presentaciones de 500 g y 1 kg, este empaque refleja nuestro compromiso con la calidad, la conservación y la excelencia en cada etapa.
+        </p>
+    </div>
+</div>
+
+<div class="etapa">
+    <img src="GA.jpeg">
+    <div class="texto">
+        <h2>Producto Final</h2>
+        <p>
+        Más que café, ofrecemos una experiencia que nace en el origen y se perfecciona en cada etapa del proceso. Desde el cultivo hasta el empaque, cada detalle refleja nuestro compromiso con la calidad, la precisión y la excelencia.
+        Cada taza es el resultado de dedicación, cuidado y pasión por crear un producto que no solo se disfruta, sino que se distingue.
+        </p>
+    </div>
+</div>
+
+<div class="cta">
+    <h2>¿Listo para probarlo?</h2>
+    <p>Descubre el sabor auténtico de Café Donballes</p>
+<a href="https://wa.me/523114170344?text=Hola%20quiero%20comprar%20cafe%20Donballes" class="btn" target="_blank">
+    Inicia tu experiencia
+</a>
+</div>
+
+<div style="text-align:center; margin-top:40px;">
+    <a href="index.html" class="btn">⬅ Volver al inicio</a>
+</div>
+
+</div>
+
+<script>
+
+const etapas = document.querySelectorAll('.etapa');
+
+window.addEventListener('scroll', () => {
+    etapas.forEach(etapa => {
+        const top = etapa.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            etapa.classList.add('visible');
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
