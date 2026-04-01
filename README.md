@@ -36,4 +36,3 @@ Café listo para disfrutar.
 
 
 ```html
-![Café](imagenes/cafe.jpg)
