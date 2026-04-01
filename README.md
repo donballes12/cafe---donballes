@@ -1,44 +1,39 @@
 # ☕ Café Donballes
 
-Bienvenido al repositorio oficial de la página web de **Café Donballes**, un café orgánico producido en Nayarit, México.
+> Café orgánico de Nayarit, cultivado con pasión y proceso artesanal de alta calidad.
+
+---
+
+## 🌐 Sitio web
+🔗 Visita la página aquí:  
+https://donballes12.github.io/cafe-donballes/
 
 ---
 
 ## 🌱 Sobre el proyecto
-Esta página web muestra el proceso completo del café, desde la cosecha de la cereza hasta el producto final listo para consumo.
+Este sitio web presenta el proceso completo del café **Café Donballes**, mostrando cada etapa desde la cosecha hasta el producto final.
 
-El objetivo es dar a conocer la calidad, origen y dedicación detrás de cada grano de café.
+El objetivo es dar transparencia al proceso y destacar la calidad del café orgánico producido en Nayarit, México.
 
 ---
 
 ## 🧑‍🌾 Proceso del café
-En la página se presentan las etapas:
 
-- Cosecha de cereza
-- Beneficio y secado
-- Proceso en camas africanas
-- Tostado
-- Producto final
+### 🌿 1. Cosecha
+Selección cuidadosa de las cerezas maduras.
 
----
+### 🌞 2. Secado
+Proceso natural para conservar el sabor.
 
-## 💻 Tecnologías utilizadas
-- HTML5
-- CSS3
-- Diseño responsivo básico
+### 🪵 3. Camas africanas
+Secado controlado para mejor calidad.
 
----
+### 🔥 4. Tostado
+Se desarrollan los aromas y el cuerpo del café.
 
-## 🚀 Cómo ver la página
-Si este proyecto está publicado con GitHub Pages, puedes verlo en línea en el enlace del repositorio.
+### ☕ 5. Producto final
+Café listo para disfrutar.
 
----
 
-## 📌 Objetivo
-Promover el café orgánico de calidad, mostrando transparencia en su producción y acercando el producto directamente al cliente.
-
----
-
-## 👤 Autor
-David Uribe Samaniego  
-Proyecto independiente - Nayarit, México
+```html
+![Café](imagenes/cafe.jpg)
